@@ -1,0 +1,12 @@
+0 silly argv { _: [ 'init' ], lernaVersion: '3.22.1', '$0': '/usr/local/bin/lerna' }
+1 notice cli v3.22.1
+2 verbose rootPath /mnt/f/Projects/mono-app-fe
+3 verbose init skipping validations
+4 verbose init skipping preparations
+5 info Initializing Git repository
+6 error Error: Command failed: git init
+6 error error: chmod on /mnt/f/Projects/mono-app-fe/.git/config.lock failed: Operation not permitted
+6 error fatal: could not set 'core.filemode' to 'false'
+6 error
+6 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:174:9)
+6 error     at /usr/local/lib/node_modules/lerna/node_modules/execa/index.js:278:16
