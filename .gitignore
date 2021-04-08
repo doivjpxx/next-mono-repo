@@ -2,3 +2,9 @@
 /packages/admin/node_modules
 /packages/user/node_modules
 /packages/shared/node_modules
+
+/packages/admin/.next
+/packages/admin/_next
+
+/packages/user/.next
+/packages/user/_next
