@@ -2,10 +2,14 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "bootstrap": "npm install; lerna bootstrap;",
+    "preinstall": "npm install",
+    "bootstrap": "lerna bootstrap",
     "package:admin": "lerna run --scope admin --stream dev",
     "package:user": "lerna run --scope user --stream dev",
-    "start": "run-p --print-label package:*",
+    "prod:admin": "lerna run --scope admin --stream start",
+    "prod:user": "lerna run --scope user --stream start",
+    "dev": "run-p --print-label package:*",
+    "start": "npm run build && run-p --print-label prod:*",
     "build": "lerna run --parallel build"
   },
   "devDependencies": {
